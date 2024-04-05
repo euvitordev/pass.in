@@ -1,9 +1,11 @@
 import { Header } from "@/components/header";
+import { HomePage } from "@/components/home";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen w-full flex-col items-center justify-between p-8">
+    <main className="mx-auto flex min-h-screen w-full max-w-7xl flex-col items-center gap-6 p-8">
       <Header />
+      <HomePage />
     </main>
   );
 }

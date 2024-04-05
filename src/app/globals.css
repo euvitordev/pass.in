@@ -74,3 +74,20 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Works on Chrome, Edge, and Safari */
+/* *::-webkit-scrollbar {
+  width: 8px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+*::-webkit-scrollbar-track {
+  background: red;
+  width: 4px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #69696b;
+  border-radius: 20px;
+} */
