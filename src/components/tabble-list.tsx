@@ -24,10 +24,11 @@ export function TabbleList() {
               className="accent size-4 rounded border border-white/10 bg-black/20"
             />
           </TableHeader>
+          <TableHeader>Código</TableHeader>
           <TableHeader>Participantes</TableHeader>
           <TableHeader>Data da inscrição</TableHeader>
           <TableHeader>Data do check-in</TableHeader>
-          <TableHeader></TableHeader>
+          <TableHeader style={{ width: 64 }}></TableHeader>
         </tr>
       </thead>
       <tbody>
@@ -68,7 +69,7 @@ export function TabbleList() {
       <tfoot>
         <tr>
           <TableCell colSpan={3}>Mostrando 10 de 228 itens</TableCell>
-          <TableCell colSpan={3}>
+          <TableCell colSpan={3} className="gap-4 p-4 text-right">
             <div className="inline-flex items-center gap-8">
               <span className=""> Página 1 de 23</span>
               <div className="flex items-center gap-2">
