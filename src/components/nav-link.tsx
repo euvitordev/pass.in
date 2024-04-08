@@ -1,17 +1,18 @@
 import { ComponentProps } from "react";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
-interface NavLinkProps extends ComponentProps<"a"> {
+interface NavLinkProps {
   children: string;
 }
 export function NavLink(props: NavLinkProps) {
   return (
     <>
-      <a {...props}>
+      <Link {...props}>
         <Button variant={"ghost"} className="opacity-80 hover:opacity-100">
           {props.children}
         </Button>
-      </a>
+      </Link>
     </>
   );
 }
